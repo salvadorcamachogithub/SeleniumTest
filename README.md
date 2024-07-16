@@ -1,0 +1,1 @@
+This is a Maven based Selenium script using Selenium Web Driver for the AOS Application purchasing a tablet
