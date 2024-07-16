@@ -136,9 +136,11 @@ public class SeleniumAOSTest
         // Sign out - Click Profile
         // Click on Profile icon
         // XPath: //*[@id="menuUser"]
-        XPath ="//*[@id='menuUser']";
+        // Change to menuUsers to make it failed
+        XPath ="//*[@id='menuUsers']";
+        //XPath ="//*[@id='menuUser']";
         chromeDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(XPath)));
-        chromeDriver.findElement(By.xpath("//*[@id=\"menuUser\"]")).click();
+        chromeDriver.findElement(By.xpath(XPath)).click();
 
         // Sign out - Click on Sign out
         // Chrome Developer Tools XPath: //*[@id="loginMiniTitle"]/label[3]
